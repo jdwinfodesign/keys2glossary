@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map
+  PUBLIC "urn:pubid:jdwinfodesign.com:doctypes:dita:dtd:map" "map.dtd">
+<map>
+   <title id="glossary">Glossary</title>
+   <topicref chunk="to-content" href="glossary/c_glossary.dita">
+      <glossref keys="g_prodname" href="glossary/g_prodname.dita"/>
+      <glossref keys="g_companyname" href="glossary/g_companyname.dita"/>
+      <glossref keys="g_clusterview" href="glossary/g_clusterview.dita"/>
+      <glossref keys="g_clustercontrol" href="glossary/g_clustercontrol.dita"/>
+      <glossref keys="g_enduser" href="glossary/g_enduser.dita"/>
+      <glossref keys="g_balance" href="glossary/g_balance.dita"/>
+      <glossref keys="g_analytics" href="glossary/g_analytics.dita"/>
+      <glossref keys="g_persistence" href="glossary/g_persistence.dita"/>
+   </topicref>
+</map>

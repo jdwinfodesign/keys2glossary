@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." name="keys2glossary" default="target">
+	
+	<property name="dita.dir" location="../../../DITA-OT-dev/dita-ot-3.4"/>
+	<property name="args.input" location="../topics/r_productname_variables.dita"/>
+	<property name="xsl" location="."/>
+	<property name="output" location="./glossary" />
+	
+	<target name="target">
+		<echo>target</echo>
+		<xmlcatalog id="ditaCatalog">
+			<catalogpath>
+				<fileset dir="${dita.dir}" includes="**/catalog.xml"/>
+				<fileset dir="${dita.dir}" includes="**/catalog-dita.xml"/>
+			</catalogpath>
+		</xmlcatalog>
+		<xslt in="${args.input}" style="${xsl}/keys2glossary.xsl"
+			out="${output}/glossary.ditamap">
+			<xmlcatalog refid="ditaCatalog"/>
+		</xslt>
+	</target>
+	
+  
+</project>
